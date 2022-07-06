@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 public class GoogleTest extends ZaleniumTestNGTest {
 
-    @Test(priority = 0)
+    @Test(testName = "Search Epam",priority = 0)
     public void searchEpam(){
         driver.findElement(By.name("q")).sendKeys("EPAM");
         driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
