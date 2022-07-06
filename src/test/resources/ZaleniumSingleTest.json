@@ -1,0 +1,11 @@
+{
+  "capabilities": {
+    "CapabilityType.BROWSER_NAME": "BrowserType.FIREFOX",
+    "CapabilityType.PLATFORM_NAME": "Platform.LINUX",
+    "build": "myTestBuild",
+    "idleTimeout": 150,
+    "screenResolution": "1280x720",
+    "recordVideo": false,
+    "tz": "America/Montreal"
+  }
+}

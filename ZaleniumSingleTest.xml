@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Single">
+    <listeners>
+        <listener class-name="TestNGListeners.Listeners"></listener>
+    </listeners>
+    <test name="SingleChromeTest">
+        <parameter name="config" value="ZaleniumSingleTest.json"/>
+        <classes>
+            <class name="ZaleniumClass.GoogleTest"/>
+        </classes>
+    </test>
+</suite>

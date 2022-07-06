@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" thread-count="3" parallel="tests">
+    <listeners>
+        <listener class-name="TestNGListeners.Listeners"></listener>
+    </listeners>
+    <test name="ParallelChromeTest">
+        <parameter name="config" value="ZaleniumSingleTest.json"/>
+        <classes>
+            <class name="ZaleniumClass.GoogleTest"/>
+        </classes>
+    </test>
+    <test name="ParallelChromeTest2">
+        <parameter name="config" value="ZaleniumSingleTest.json"/>
+        <classes>
+            <class name="ZaleniumClass.GoogleTest"/>
+        </classes>
+    </test>
+    <test name="ParallelChromeTest3">
+        <parameter name="config" value="ZaleniumSingleTest.json"/>
+        <classes>
+            <class name="ZaleniumClass.GoogleTest"/>
+        </classes>
+    </test>
+</suite>
